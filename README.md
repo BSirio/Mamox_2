@@ -21,6 +21,13 @@ LIMITED WARRANTY
 The Software and related documentation are provided “AS IS” and without	any warranty of any kind and Seller EXPRESSLY DISCLAIMS ALL WARRANTIES,	EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES	OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 ## HOW TO USE
+From installer (for Windows only):
+Download Mamox2.exe, execute it, and follow the instlalation process. At the end of the installation process restart your computer (mandatory).
+After the installation a folder named "Mamox2 files" should be created in the Documents folder.
+Execute the script "run.bat" in the "Mamox2 files" to run an exmple. The example can be configured by editing the "config.txt" file. More details on how to configure the "config.txt" file are provided below.
+
+From source:
+Compile the source file
 An example is provided in the "Mamox 2 input example.zip" file. Unzip the file in the Documents folder of your computer. To test the example compile Mamox2, provide "libnlopt.dll" from NLopt library (https://nlopt.readthedocs.io/en/latest/) and "libinchi.dll" from InChI library (https://www.inchi-trust.org/downloads/), and run the following command:
 > "Mamox 2.exe" "C:\users\%username%\Documents\Mamox 2 input example\config.txt"
 

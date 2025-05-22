@@ -60,6 +60,9 @@ public:
 	RateRule alkenylROForm{ 0 ,false };
 	RateRule alkenylRODec{ 1 ,false };
 	RateRule aldDec{ 0 ,false };
+	RateRule hToOLE{ 2 ,false };
+	RateRule initiationOLE{ 1 ,false };
+	RateRule betaDecOLER{ 0 ,true };
 
 
 public:
@@ -108,6 +111,9 @@ public:
 	reactionComment v_alkenyl_ro_form();
 	reactionComment v_alkenyl_ro_dec(Carbonio c);
 	reactionComment v_ald_dec();
+	reactionComment v_h_to_ole(Carbonio C1, Carbonio C2);
+	reactionComment v_intiation_ole(bool isCH3);
+	reactionComment v_beta_dec_oler();
 
 	//void setT(double Temp);
 	//void wrireaLump(std::ofstream& stream, Molecola reag, Molecola prod[], std::vector<double> stoicCoeff, double A, double n, double E);

@@ -226,6 +226,21 @@ Kinox::Kinox(std::string nome)
 			readParameters(input, 1, aldDec);
 			break;
 		}
+		case 25:
+		{
+			readParameters(input, 2, initiationOLE);
+			break;
+		}
+		case 26:
+		{
+			readParameters(input, 1, betaDecOLER);
+			break;
+		}
+		case 27:
+		{
+			readParameters(input, 8, hToOLE);
+			break;
+		}
 		default:
 		{
 			break;
@@ -1216,7 +1231,45 @@ reactionComment Kinox::v_ald_dec()
 	return comment;
 }
 
+reactionComment Kinox::v_h_to_ole(Carbonio C1, Carbonio C2)
+{
+	std::string RRID;
+	std::vector<std::string> param = {PSTQ(C1), PSTQ(C2) };
+	std::vector<double> kinPar = hToOLE.returnRates(param, &RRID);
+	A = kinPar[0];
+	n = kinPar[1];
+	E = kinPar[2];
+	reactionComment comment(RRID);
+	return comment;
+}
 
+reactionComment Kinox::v_intiation_ole(bool isCH3)
+{
+	std::string RRID;
+	std::vector<std::string> param;
+	if (isCH3)
+		param.push_back("me");
+	else
+		param.push_back("other");
+	std::vector<double> kinPar = initiationOLE.returnRates(param, &RRID);
+	A = kinPar[0];
+	n = kinPar[1];
+	E = kinPar[2];
+	reactionComment comment(RRID);
+	return comment;
+}
+
+reactionComment Kinox::v_beta_dec_oler()
+{
+	std::string RRID;
+	std::vector<std::string> param = { };
+	std::vector<double> kinPar = betaDecOLER.returnRates(param, &RRID);
+	A = kinPar[0];
+	n = kinPar[1];
+	E = kinPar[2];
+	reactionComment comment(RRID);
+	return comment;
+}
 
 
 

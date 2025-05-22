@@ -212,6 +212,7 @@ int Molecola::removeOle(int num)		// remove the num-th olefin (order in which th
 	if (numole == 0)
 	{
 		std::cerr << "WARNING: removeOle called on a non olefins!" << std::endl;
+		//std::cout << *this << std::endl;
 		return 0;
 	}
 	if (num > numole)
@@ -3239,6 +3240,18 @@ bool Molecola::isCradAllylic(int pos)
 			if (isole(i))
 				return true;
 	
+	return false;
+}
+
+bool Molecola::isCradVinylic(int pos)
+{
+	if (tipo(pos) != 2)
+	{
+		std::cerr << "WARNING: isCradAllylic called on a non Crad atom!" << std::endl;
+		return false;
+	}
+	if (isole(pos))
+		return true;
 	return false;
 }
 

@@ -690,7 +690,7 @@ Group ThermoOut::findGroup(std::string groupName, std::vector<Group>* groupVecto
 			return (*groupVector)[i];
 	}
 
-	std::cout << "WARNING: in ThermoOut::findGroup " << groupName << " was not found!" << std::endl;
+	//std::cout << "WARNING: in ThermoOut::findGroup " << groupName << " was not found!" << std::endl;
 	Group errorGroup;
 	errorGroup.name = "ERR";
 	errorGroup.Hf = 0.0;

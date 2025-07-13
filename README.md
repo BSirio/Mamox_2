@@ -23,9 +23,10 @@ The Software and related documentation are provided “AS IS” and without	any 
 
 ## HOW TO USE
 From installer (for Windows only):
-Download Mamox2_installer.exe, execute it, and follow the instlalation process. At the end of the installation process restart your computer (mandatory).
+Download Mamox2_installer.exe, execute it, and follow the installation process. At the end of the installation process restart your computer (mandatory).
 After the installation a folder named "Mamox2 files" should be created in the Documents folder.
 Execute the script "run.bat" in the "Mamox2 files" to run an exmple. The example can be configured by editing the "config.txt" file. More details on how to configure the "config.txt" file are provided below.
+The installation process should install Python and Cantera if they are not alreasy installed on the machine. If during the execution of the software an error is raised regarding the unavailability of Cantera (specifically "'ck2yaml' is not recognized as an internal or external command"), please install Python 3.13 or higher and the Cantera module.
 
 From source:
 Compile the source file

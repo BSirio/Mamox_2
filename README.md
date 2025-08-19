@@ -13,7 +13,7 @@ If a publication is produced using this software the following references must b
 - E. Ranzi, A. Frassoldati, S. Granata, T. Faravelli, Wide-Range Kinetic Modeling Study of the Pyrolysis, Partial Oxidation, and Combustion of Heavy n-Alkanes, Ind. Eng. Chem. Res. 44 (2005) 5170-5183
 - E. Ranzi, T. Faravelli, P. Gaffuri, A. Sogaro, Low-Temperature Combustion - Automatic-Generation of Primary Oxidation Reactions and Lumping Procedures, Combustion and Flame 102 (1995) 179-192.
 - S. Brunialti, X. Zhang, T. Faravelli, A. Frassoldati, S.M. Sarathy, Automatically generated detailed and lumped reaction mechanisms for low- and high-temperature oxidation of alkanes, Proceedings of the Combustion Institute 39 (2023) 335-344.
-- S. Brunialti, X. Zhang, Q. Wang, T. Faravelli, S.M. Sarathy, Automatic generation of compact kinetic models for large alkane oxidation, Combustion and Flame (2025), under review
+- S. Brunialti, X. Zhang, Q. Wang, T. Faravelli, S.M. Sarathy, Automatic generation of compact kinetic models for large alkane oxidation, Combustion and Flame 280 (2025) 114355
 
 WARNING  
 This version of MAMOX2 and its source code are intended for educational purposes. Use for commercial purposes is not permitted. For any commercial issue please contact	Sirio Brunialti (sirio.brunialti@kaust.edu.sa) and Tiziano Faravelli (tiziano.faravelli@polimi.it).
